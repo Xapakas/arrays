@@ -7,6 +7,21 @@
   <body>
     <button onclick="fun1()" >Try it</button>
   </body>
-  <script src="js/array.js">
+  <script>
+  var Animal=["Lion","Penguin","Monkey","Elephant","Shark","Spider"];
+ function fun1()
+  {
+    window.alert("rrr");
+    var x = document.createElement("ol");
+    x.setAttribute("id", "orderlist");
+    document.body.appendChild(x);
+    Animal.forEach(function(d)
+    {
+      var list = document.createElement("li");
+    	var text = document.createTextNode(d);
+    	list.appendChild(text);
+      document.getElementById("ol").appendChild(list);
+    });
+
   </script>
 </html>
