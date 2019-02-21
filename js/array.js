@@ -3,7 +3,7 @@ var Animal["Lion","Penguin","Monkey","Elephant","Shark","Spider"];
 var fun1=function()
 {
   window.alert("rrr");
-  /*var x = document.createElement("OL");
+  var x = document.createElement("OL");
   x.setAttribute("id", "ol");
   document.body.appendChild(x);
   Animal.forEach(function(d)));*/

@@ -11,17 +11,16 @@
   var Animal=["Lion","Penguin","Monkey","Elephant","Shark","Spider"];
  function fun1()
   {
-    window.alert("rrr");
-    var x = document.createElement("ol");
-    x.setAttribute("id", "orderlist");
-    document.body.appendChild(x);
-    Animal.forEach(function(d)
-    {
-      var list = document.createElement("li");
-    	var text = document.createTextNode(d);
-    	list.appendChild(text);
-      document.getElementById("ol").appendChild(list);
-    });
-
+      var list = document.createElement("OL");
+      list.setAttribute("id", "orderlist");
+      document.body.appendChild(list);
+      Animal.forEach(function(item)
+      {
+        var tag = document.createElement("LI");
+        var text = document.createTextNode(item);
+        tag.appendChild(text);
+        document.getElementById("orderlist").appendChild(tag);
+      })
+    }
   </script>
 </html>
