@@ -5,7 +5,7 @@
     <title>Animal List</title>
   </head>
   <body>
-    <button onclick="fun1()" >Try it</button>
+    <button id="btn" onclick="fun1()">Try it</button>
   </body>
   <script>
   var Animal=["Lion","Penguin","Monkey","Elephant","Shark","Spider"];
@@ -21,6 +21,7 @@
         tag.appendChild(text);
         document.getElementById("orderlist").appendChild(tag);
       })
+      document.getElementById("btn").disabled = true;
     }
   </script>
 </html>
