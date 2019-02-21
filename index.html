@@ -2,25 +2,25 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Animal List</title>
   </head>
   <body>
-    <p>Click the button to create an OL element and a LI element.</p>
-
-    <button onclick="myFunction()">Try it</button>
-
-    <p id="demo"></p>
-
-    <script>
-    function myFunction() {
-      var x = document.createElement("OL");
-      x.setAttribute("id", "myOl");
-      document.body.appendChild(x);
-
-      var y = document.createElement("LI");
-      var t = document.createTextNode("Coffee");
-      y.appendChild(t);
-      document.getElementById("myOl").appendChild(y);
+    <button onclick="fun1()" >Try it</button>
+  </body>
+  <script>
+  var Animal=["Lion","Penguin","Monkey","Elephant","Shark","Spider"];
+ function fun1()
+  {
+      var list = document.createElement("OL");
+      list.setAttribute("id", "orderlist");
+      document.body.appendChild(list);
+      Animal.forEach(function(item)
+      {
+        var tag = document.createElement("LI");
+        var text = document.createTextNode(item);
+        tag.appendChild(text);
+        document.getElementById("orderlist").appendChild(tag);
+      })
     }
-    </script>
+  </script>
 </html>
